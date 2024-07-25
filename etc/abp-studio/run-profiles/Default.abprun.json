@@ -1,0 +1,17 @@
+﻿{
+  "applications": {
+    "AbpSolution1.HttpApi.Host": {
+      "type": "dotnet-project",
+      "launchUrl": "https://localhost:44377",
+      "path": "../../../src/AbpSolution1.HttpApi.Host/AbpSolution1.HttpApi.Host.csproj",
+      "kubernetesService": ".*-httpapihost$"  
+    },
+    "AbpSolution1.Angular": {
+      "type": "cli",
+      "workingDirectory": "../../../angular",
+      "startCommand": "./start.ps1",
+      "launchUrl": "http://localhost:4200",
+      "kubernetesService": ".*-angular$"        
+    }
+  }
+}
